@@ -32,17 +32,17 @@ h2 {
 }
 
 button {
-    background: #080808;
+    background: #551A8B;
     color: #fff;
     border: none;
     border-radius: 30px;
-    padding: 5x 10px;
+    padding: 20px 40px;
     cursor: pointer;
     margin: 5px;
 }
 
 button:hover {
-    background: #333333;
+    background: #551A8B;
 }
 
 footer {
