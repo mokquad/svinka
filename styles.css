@@ -1,0 +1,71 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #080808;
+    color: #f4f4f4;
+}
+
+header {
+    background: #551A8B;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.info, .features, .download {
+    background: #0f9194;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #f4f4f4;
+}
+
+button {
+    background: #080808;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 5x 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background: #333333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+.log-window {
+    background: #333333;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#log-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#log-list li {
+    margin: 5px 0;
+    color: #f4f4f4;
+}

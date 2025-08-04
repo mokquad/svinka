@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svinka Downgrade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+        <h1>Svinka Downgrade ++</h1>
+        <p>Откатите свой iPhone до iPhoneOS 1.0</p>
+</header>   
+    <main>
+        <center>
+            <button onclick="startInstallation()">Начать установку хуйни</button>
+        </center>
+        <center>
+            <div class="log-window" id="log-window" style="display: none;">
+                <ul id="log-list"></ul>
+            </div>
+        </center>
+    </main>
+
+    <script>
+        const sound = new Audio('sound.mp3'); // Замените 'sound.mp3' на имя вашего звукового файла
+
+        function startInstallation() {
+            // Показываем окно логов
+            document.getElementById('log-window').style.display = 'block';
+
+            let logs = [
+                "Скачиваем прошивку",
+                "Ищем эксплоит для даун грейда",
+                "Эксплоит найден, начинаем удаление RootFS",
+                "Ваш RootFS успешно удален, начинаем установку индийского языка и вирусов",
+                "Успешно, начинаем создавать и патчить вам кастом рамдиск для загрузки",
+                "Рамдиск успешно создан, начинаем создание патчей",
+                "Патчи созданы, начинаем создание Узбеков и бьем ебало Стоннепху",
+                "Успешно, начинаем рестор",
+                "disk0s1s1, disk0s1s2, disk0s1s3, disk0s1s4 и disk0s1s5 были успешно стерты",
+                "Успешно",
+                "Скачиваем картинки хуев, жоп и сисек в DCIM",
+                "Успешно",
+                "Скидываем ваш iP нам на сервер, в индийский и китайский",
+                "Успешно",
+                "Шлем нахуй аср",
+                "Успешно",
+                "Делаем деанон на Тим Кока",
+                "Успешно",
+                "Заливаем сперму вам в процессор",
+                "Успешно",
+                "Начинаем установку хуйни ++ и драйверов ++",
+                "Ставим вам Package ++",
+                "Добавляем Черный Бумер на рингтон и будильник",
+                "Успешно",
+                "Убиваем Прототип Боарда нахуй за фембойство и гейство",
+                "Успешно",
+                "Блокируем вам доступ в интернет к хуям",
+                "Успешно",
+                "Завершаем установку",
+                "Успешно",
+                "ВАШ ТЕЛЕФОН ПРОШИТ. ЖДИТЕ МИХУ, УЗБЕКОВ И ТИМА КОКА У СЕБЯ ДОМА"
+            ];
+            let logList = document.getElementById('log-list');
+            logList.innerHTML = ""; // Очистка предыдущих логов
+            
+            logs.forEach((log, index) => {
+                setTimeout(() => {
+                    let li = document.createElement('li');
+                    li.textContent = log;
+                    logList.appendChild(li);
+
+                    // Воспроизведение звука при добавлении нового лога
+                    sound.play().catch(error => {
+                        console.error("Ошибка воспроизведения звука: ", error);
+                    });
+                }, index * 5000); // Задержка в 5 секунд между записями
+            });
+        }
+    </script>
+</body>
+</html>
